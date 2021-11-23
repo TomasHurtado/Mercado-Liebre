@@ -11,6 +11,7 @@ body{
 
 h3{
     font-size: 24px;
+    padding: 10px;
 }
 h5{
     padding: 15px;
@@ -99,88 +100,10 @@ div.burger-menu i{
     width: 40px;
 }
 
-div.last-visit,
-div.offers{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.price{
-    font-size: 18px;
-    width: 30%;
-}
 
-.discount{
-    width: 70%;
-}
 
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
-}
 
-h3,
-.description{
-    color: #666;
-}
-
-.description{
-    display: none;
-    margin-top: 20px;
-    
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-main section article{
-    background-color: #fff;    
-    margin: 10px 0px;
-}
-
-main section article img{
-    width: 100%;
-}
-
-main section article i,
-.discount{
-    color: #39b54a;
-}
-
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-
-main section h3{
-    margin: 20px 0px;
-}
-
-article div.main-article{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
-    position: relative;
-    padding: 15px;
-}
 .footer{
     display: flex;
     text-align: center;
@@ -189,22 +112,30 @@ article div.main-article{
 .icons
 {
     font-size: 2em;
-    color: blue;
+    color: #3483fa;
     margin-bottom: 10px;
 }
 
-main section article:hover .description{
-    display: block;
+main{
+    font-size: 20px;
+    text-align: center;
+    
+    background-color: rgba(255, 255, 255, 0.411);
 }
-main section div.products article i{
-    transition: transform 1s;
+main .forms input{
+    width: 250px;
+    height: 30px;
+    
 }
-
-main section div.products article:hover i{
-    transform: rotate(-90deg);
+button{
+    width: 150px;
+    height: 30px;
+    background-color: #3483fa;
+    color:white;
+    
 }
-main section article:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+button:hover{
+    background-color: #0022AA;
 }
 
 .texto{
@@ -214,10 +145,15 @@ main section article:hover{
 footer i:hover{
     color: #0022aa;
 }
-@media (min-width: 361px){
-    
 
-    
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 
     main section div.products{
         display: flex;
@@ -239,10 +175,11 @@ footer i:hover{
         display: none;
     }
     
-    .logo{
-        width: 100px;
-    }
+    
 }
+
+
+
 
 @media (min-width: 769px){
     main section div.products article{
@@ -268,7 +205,5 @@ footer i:hover{
         flex-direction: row;
         padding: 10px;
     }
-    .logo{
-        width: 150px;
-    }
+    
 }
